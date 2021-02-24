@@ -84,9 +84,9 @@ class LivyCLIService(server: LivyThriftServer)
   @throws[HiveSQLException]
   def getInfo(sessionHandle: SessionHandle, getInfoType: GetInfoType): GetInfoValue = {
     getInfoType match {
-      case GetInfoType.CLI_SERVER_NAME => new GetInfoValue("Apache Hive")
-      case GetInfoType.CLI_DBMS_NAME => new GetInfoValue("Apache Hive")
-      case GetInfoType.CLI_DBMS_VER => new GetInfoValue("1.1.0-cdh5.11.0")
+      case GetInfoType.CLI_SERVER_NAME => new GetInfoValue("Spark SQL")
+      case GetInfoType.CLI_DBMS_NAME => new GetInfoValue("Spark SQL")
+      case GetInfoType.CLI_DBMS_VER => new GetInfoValue("2.3.2")
       // below values are copied from Hive
       case GetInfoType.CLI_MAX_COLUMN_NAME_LEN => new GetInfoValue(128)
       case GetInfoType.CLI_MAX_SCHEMA_NAME_LEN => new GetInfoValue(128)
